@@ -1,369 +1,497 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Dan Brekke | Electronic Press Kit</title>
-
-    <meta name="description" content="Electronic Press Kit for Dan Brekke — country, blues, rock and original music.">
-
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-    <!-- NAVIGATION -->
-
-    <header class="site-header">
-
-        <div class="logo">
-            DAN BREKKE
-        </div>
-
-        <nav>
-            <a href="#about">About</a>
-            <a href="#live">Live</a>
-            <a href="#music">Music</a>
-            <a href="#press">Press</a>
-            <a href="#booking">Booking</a>
-        </nav>
-
-    </header>
-
-
-    <!-- HERO -->
-
-    <section class="hero">
-
-        <div class="hero-content">
-
-            <p class="eyebrow">
-                COUNTRY • BLUES • ROCK
-            </p>
-
-            <h1>
-                DAN<br>BREKKE
-            </h1>
-
-            <p class="hero-description">
-                Singer-songwriter, multi-instrumentalist and live performer.
-            </p>
-
-            <div class="hero-buttons">
-
-                <a href="#music" class="button button-light">
-                    Listen
-                </a>
-
-                <a href="#booking" class="button button-outline">
-                    Booking
-                </a>
-
-            </div>
-
-        </div>
-
-        <div class="scroll-indicator">
-            SCROLL
-        </div>
-
-    </section>
-
-
-    <!-- ABOUT -->
-
-    <section class="section about" id="about">
-
-        <div class="section-label">
-            01 / ABOUT
-        </div>
-
-        <div class="about-content">
-
-            <div class="about-heading">
-
-                <h2>
-                    A musician built<br>
-                    for the stage.
-                </h2>
-
-            </div>
-
-            <div class="about-text">
-
-                <p class="large-text">
-                    Dan Brekke is a singer-songwriter, multi-instrumentalist
-                    and performer based in the Midwest.
-                </p>
-
-                <p>
-                    With experience spanning Nashville, regional touring,
-                    festivals, theaters and live entertainment, Dan brings
-                    country, blues, rock and original music together into a
-                    high-energy live experience.
-                </p>
-
-                <p>
-                    Dan has performed with the Johnny Holm Band and has
-                    appeared at venues and events throughout the Midwest,
-                    including WE Fest.
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- VIDEO -->
-
-    <section class="section video-section">
-
-        <div class="section-label">
-            02 / LIVE
-        </div>
-
-        <div class="video-placeholder">
-
-            <div class="play-button">
-                ▶
-            </div>
-
-            <p>
-                FEATURED PERFORMANCE
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- LIVE PHOTOS -->
-
-    <section class="section live-section" id="live">
-
-        <div class="section-label">
-            03 / LIVE PHOTOS
-        </div>
-
-        <div class="section-title-row">
-
-            <h2>
-                On stage.
-            </h2>
-
-            <p>
-                Live performance photography
-            </p>
-
-        </div>
-
-        <div class="photo-grid">
-
-            <div class="photo-placeholder photo-large">
-                <span>PHOTO 01</span>
-            </div>
-
-            <div class="photo-placeholder">
-                <span>PHOTO 02</span>
-            </div>
-
-            <div class="photo-placeholder">
-                <span>PHOTO 03</span>
-            </div>
-
-            <div class="photo-placeholder photo-wide">
-                <span>PHOTO 04</span>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- MUSIC -->
-
-    <section class="section music-section" id="music">
-
-        <div class="section-label">
-            04 / MUSIC
-        </div>
-
-        <div class="music-content">
-
-            <h2>
-                Listen.
-            </h2>
-
-            <p>
-                Original music, live performances and more.
-            </p>
-
-            <div class="music-placeholder">
-
-                <p>
-                    SPOTIFY PLAYER
-                </p>
-
-                <span>
-                    Spotify embed will go here
-                </span>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- PRESS -->
-
-    <section class="section press-section" id="press">
-
-        <div class="section-label">
-            05 / PRESS
-        </div>
-
-        <div class="press-heading">
-
-            <h2>
-                What they're saying.
-            </h2>
-
-        </div>
-
-        <div class="quote">
-
-            <p class="quote-text">
-                “He truly has a gift for song writing.”
-            </p>
-
-            <p class="quote-source">
-                — WE Fest
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- CREDENTIALS -->
-
-    <section class="section credentials-section">
-
-        <div class="section-label">
-            06 / EXPERIENCE
-        </div>
-
-        <div class="credentials">
-
-            <div class="credential">
-                <span>FESTIVAL</span>
-                <strong>WE FEST</strong>
-            </div>
-
-            <div class="credential">
-                <span>PERFORMER</span>
-                <strong>JOHNNY HOLM BAND</strong>
-            </div>
-
-            <div class="credential">
-                <span>EXPERIENCE</span>
-                <strong>NASHVILLE</strong>
-            </div>
-
-            <div class="credential">
-                <span>MEDIA</span>
-                <strong>PRAIRIE PUBLIC</strong>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- DOWNLOADS -->
-
-    <section class="section downloads-section">
-
-        <div class="section-label">
-            07 / MEDIA
-        </div>
-
-        <div class="downloads-content">
-
-            <h2>
-                Media & downloads.
-            </h2>
-
-            <div class="download-grid">
-
-                <a href="#" class="download-card">
-                    <span>01</span>
-                    <strong>PRESS PHOTOS</strong>
-                    <small>High-resolution images</small>
-                </a>
-
-                <a href="#" class="download-card">
-                    <span>02</span>
-                    <strong>ONE SHEET</strong>
-                    <small>Artist information</small>
-                </a>
-
-                <a href="#" class="download-card">
-                    <span>03</span>
-                    <strong>TECH RIDER</strong>
-                    <small>Technical information</small>
-                </a>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- BOOKING -->
-
-    <section class="booking-section" id="booking">
-
-        <div class="booking-content">
-
-            <p class="eyebrow">
-                BOOKING & INQUIRIES
-            </p>
-
-            <h2>
-                Let's put Dan<br>
-                on your stage.
-            </h2>
-
-            <a href="mailto:booking@danbrekkemusic.com" class="button button-light">
-                Get in touch
-            </a>
-
-        </div>
-
-    </section>
-
-
-    <!-- FOOTER -->
-
-    <footer>
-
-        <div>
-            DAN BREKKE
-        </div>
-
-        <div>
-            © 2026 Dan Brekke
-        </div>
-
-    </footer>
-
-
-</body>
-</html>
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #111;
+    color: #f4f1eb;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* =========================================
+   GENERAL
+========================================= */
+
+section {
+    padding: 100px 7%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-label {
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    opacity: 0.6;
+    margin-bottom: 15px;
+}
+
+.section-title {
+    font-size: clamp(42px, 6vw, 80px);
+    line-height: 0.95;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.section-text {
+    max-width: 650px;
+    font-size: 18px;
+    color: #cfcac2;
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+.site-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 25px 5%;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.site-nav {
+    display: flex;
+    gap: 30px;
+}
+
+.site-nav a {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
+.site-nav a:hover {
+    opacity: 1;
+}
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+    min-height: 100vh;
+    padding: 140px 7% 80px;
+
+    display: flex;
+    align-items: flex-end;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(0,0,0,0.85),
+            rgba(0,0,0,0.2)
+        ),
+        #222;
+}
+
+.hero-content {
+    max-width: 1100px;
+}
+
+.hero-kicker {
+    font-size: 14px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(70px, 13vw, 190px);
+    line-height: 0.8;
+    letter-spacing: -5px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.hero-subtitle {
+    font-size: 22px;
+    max-width: 600px;
+    color: #ddd;
+    margin-bottom: 35px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 25px;
+    border: 1px solid #f4f1eb;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    transition: all 0.2s;
+}
+
+.button:hover {
+    background: #f4f1eb;
+    color: #111;
+}
+
+.button-solid {
+    background: #f4f1eb;
+    color: #111;
+}
+
+/* =========================================
+   ABOUT
+========================================= */
+
+.about {
+    background: #f1eee8;
+    color: #111;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.about .section-text {
+    color: #444;
+}
+
+.about-image {
+    min-height: 550px;
+    background: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #777;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* =========================================
+   VIDEO
+========================================= */
+
+.video-section {
+    background: #111;
+}
+
+.video-wrapper {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #222;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #777;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+/* =========================================
+   LIVE PHOTOS
+========================================= */
+
+.live {
+    background: #171717;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.photo-placeholder {
+    aspect-ratio: 16 / 10;
+    background: #292929;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* =========================================
+   MUSIC
+========================================= */
+
+.music {
+    background: #f1eee8;
+    color: #111;
+}
+
+.music-box {
+    background: #dedbd4;
+    min-height: 300px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* =========================================
+   PRESS
+========================================= */
+
+.press {
+    background: #111;
+    text-align: center;
+}
+
+.press-quote {
+    max-width: 1000px;
+    margin: 0 auto;
+
+    font-size: clamp(35px, 5vw, 70px);
+    line-height: 1.05;
+}
+
+.press-source {
+    margin-top: 30px;
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    opacity: 0.6;
+}
+
+/* =========================================
+   EXPERIENCE
+========================================= */
+
+.experience {
+    background: #f1eee8;
+    color: #111;
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+    border-top: 1px solid #aaa;
+}
+
+.experience-item {
+    padding: 30px 0;
+    border-bottom: 1px solid #aaa;
+}
+
+.experience-item:nth-child(odd) {
+    margin-right: 40px;
+}
+
+.experience-item:nth-child(even) {
+    padding-left: 40px;
+    border-left: 1px solid #aaa;
+}
+
+.experience-item h3 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.experience-item p {
+    color: #555;
+}
+
+/* =========================================
+   DOWNLOADS
+========================================= */
+
+.media {
+    background: #171717;
+}
+
+.download-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.download-card {
+    border: 1px solid #444;
+    padding: 35px;
+
+    min-height: 180px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    transition: background 0.2s;
+}
+
+.download-card:hover {
+    background: #222;
+}
+
+.download-card h3 {
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.download-card span {
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0.6;
+}
+
+/* =========================================
+   BOOKING
+========================================= */
+
+.booking {
+    min-height: 70vh;
+
+    display: flex;
+    align-items: center;
+
+    background: #f1eee8;
+    color: #111;
+}
+
+.booking-content {
+    max-width: 900px;
+}
+
+.booking h2 {
+    font-size: clamp(60px, 10vw, 140px);
+    line-height: 0.85;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.booking p {
+    font-size: 20px;
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.site-footer {
+    background: #111;
+    padding: 35px 7%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: #777;
+    font-size: 12px;
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 800px) {
+
+    section {
+        padding: 75px 6%;
+    }
+
+    .site-header {
+        padding: 20px 6%;
+    }
+
+    .site-nav {
+        display: none;
+    }
+
+    .hero {
+        min-height: 90vh;
+        padding: 120px 6% 60px;
+    }
+
+    .hero h1 {
+        letter-spacing: -3px;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .about-image {
+        min-height: 400px;
+    }
+
+    .photo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-item:nth-child(odd) {
+        margin-right: 0;
+    }
+
+    .experience-item:nth-child(even) {
+        padding-left: 0;
+        border-left: none;
+    }
+
+    .download-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .site-footer {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
