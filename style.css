@@ -534,7 +534,12 @@ section {
 .about-lead {
     font-size: 21px;
 }
-
+   
+   .video-heading-row {
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+   
     .photo-grid {
         grid-template-columns: 1fr;
     }
