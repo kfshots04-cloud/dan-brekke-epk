@@ -288,6 +288,10 @@ section {
    LIVE PHOTO GALLERY
 ========================================= */
 
+/* =========================================
+   LIVE PHOTO GALLERY
+========================================= */
+
 .live-gallery {
     background: #171717;
     color: #f4f1eb;
@@ -312,50 +316,44 @@ section {
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 300px;
     gap: 15px;
 }
 
+/* Main feature image */
+.gallery-feature {
+    grid-column: 1 / -1;
+    height: 600px;
+}
+
+/* Standard gallery images */
 .gallery-item {
     overflow: hidden;
     background: #222;
+    height: 420px;
 }
 
-.gallery-feature {
-    grid-row: span 2;
+/* Taller slot for the vertical solo photo */
+.gallery-portrait {
+    height: 600px;
 }
 
+/* All gallery images */
 .gallery-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
-
     transition: transform 0.4s ease;
 }
 
+/* Keep feature image larger */
+.gallery-item.gallery-feature {
+    height: 600px;
+}
+
+/* Small hover effect */
 .gallery-item:hover img {
     transform: scale(1.03);
-}
-
-.live-photo-1 {
-    object-position: center center;
-}
-
-.live-photo-2 {
-    object-position: center 35%;
-}
-
-.live-photo-3 {
-    object-position: center 50%;
-}
-
-.live-photo-4 {
-    object-position: center 52%;
-}
-
-.live-photo-5 {
-    object-position: center 42%;
 }
 
 /* =========================================
@@ -363,11 +361,11 @@ section {
 ========================================= */
 
 .live-photo-1 {
-    object-position: center center;
+    object-position: center 45%;
 }
 
 .live-photo-2 {
-    object-position: center 35%;
+    object-position: center 30%;
 }
 
 .live-photo-3 {
@@ -375,11 +373,11 @@ section {
 }
 
 .live-photo-4 {
-    object-position: center 52%;
+    object-position: center 50%;
 }
 
 .live-photo-5 {
-    object-position: center 42%;
+    object-position: center 45%;
 }
 
 /* =========================================
