@@ -137,9 +137,11 @@
     </div>
 </section>
 
-    <!-- LIVE PHOTOS -->
+<!-- =========================================
+     LIVE PHOTOS
+========================================= -->
 
- <section class="live-gallery" id="photos">
+<section class="live-gallery" id="photos">
     <div class="container">
 
         <p class="section-label">03 / LIVE PHOTOS</p>
@@ -155,64 +157,94 @@
             </p>
         </div>
 
-<div class="gallery-grid">
+        <div class="gallery-grid">
 
-    <div class="gallery-item gallery-feature">
-        <img class="live-photo-1 gallery-clickable"
-             src="images/live-1.jpg"
-             alt="Dan Brekke performing with his band"
-             data-index="0">
+            <!-- FEATURE IMAGE -->
+            <div class="gallery-item gallery-feature">
+                <img
+                    class="live-photo-1 gallery-clickable"
+                    src="images/live-1.jpg"
+                    alt="Dan Brekke performing with his band"
+                    data-index="0">
+            </div>
+
+            <!-- PORTRAIT IMAGE -->
+            <div class="gallery-item gallery-portrait">
+                <img
+                    class="live-photo-2 gallery-clickable"
+                    src="images/live-2.jpg"
+                    alt="Dan Brekke performing live"
+                    data-index="1">
+            </div>
+
+            <div class="gallery-item">
+                <img
+                    class="live-photo-3 gallery-clickable"
+                    src="images/live-3.jpg"
+                    alt="Dan Brekke band performing live"
+                    data-index="2">
+            </div>
+
+            <div class="gallery-item">
+                <img
+                    class="live-photo-4 gallery-clickable"
+                    src="images/live-4.jpg"
+                    alt="Dan Brekke performing for a live crowd"
+                    data-index="3">
+            </div>
+
+            <div class="gallery-item">
+                <img
+                    class="live-photo-5 gallery-clickable"
+                    src="images/live-5.jpg"
+                    alt="Dan Brekke meeting fans"
+                    data-index="4">
+            </div>
+
+        </div>
+
     </div>
-
-    <div class="gallery-item gallery-portrait">
-        <img class="live-photo-2 gallery-clickable"
-             src="images/live-2.jpg"
-             alt="Dan Brekke performing live"
-             data-index="1">
-    </div>
-
-    <div class="gallery-item">
-        <img class="live-photo-3 gallery-clickable"
-             src="images/live-3.jpg"
-             alt="Dan Brekke band performing live"
-             data-index="2">
-    </div>
-
-    <div class="gallery-item">
-        <img class="live-photo-4 gallery-clickable"
-             src="images/live-4.jpg"
-             alt="Dan Brekke performing for a live crowd"
-             data-index="3">
-    </div>
-
-    <div class="gallery-item">
-        <img class="live-photo-5 gallery-clickable"
-             src="images/live-5.jpg"
-             alt="Dan Brekke meeting fans"
-             data-index="4">
-    </div>
-
-</div>
-
-    </div>
-     
 </section>
 
-<!-- PHOTO LIGHTBOX -->
-<div class="lightbox" id="lightbox">
-    <button class="lightbox-close" id="lightbox-close">&times;</button>
 
-    <button class="lightbox-arrow lightbox-prev" id="lightbox-prev">
+<!-- =========================================
+     PHOTO LIGHTBOX
+========================================= -->
+
+<div class="lightbox" id="lightbox">
+
+    <button
+        class="lightbox-close"
+        id="lightbox-close"
+        aria-label="Close gallery">
+        &times;
+    </button>
+
+    <button
+        class="lightbox-arrow lightbox-prev"
+        id="lightbox-prev"
+        aria-label="Previous image">
         &#10094;
     </button>
 
-    <img id="lightbox-image" src="" alt="Expanded gallery image">
+    <div class="lightbox-image-wrapper">
+        <img
+            id="lightbox-image"
+            src=""
+            alt="Expanded gallery image">
+    </div>
 
-    <button class="lightbox-arrow lightbox-next" id="lightbox-next">
+    <button
+        class="lightbox-arrow lightbox-next"
+        id="lightbox-next"
+        aria-label="Next image">
         &#10095;
     </button>
-</div>
 
+    <div class="lightbox-counter" id="lightbox-counter"></div>
+
+</div>
+    
     <!-- MUSIC -->
 
     <section class="section music-section" id="music">
