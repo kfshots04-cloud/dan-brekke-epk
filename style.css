@@ -283,9 +283,6 @@ section {
     display: block;
     border: 0;
 }
-/* =========================================
-   LIVE PHOTOS
-========================================= */
 
 /* =========================================
    LIVE PHOTO GALLERY
@@ -340,6 +337,51 @@ section {
 .gallery-item:hover img {
     transform: scale(1.03);
 }
+
+.live-photo-1 {
+    object-position: center center;
+}
+
+.live-photo-2 {
+    object-position: center 35%;
+}
+
+.live-photo-3 {
+    object-position: center 50%;
+}
+
+.live-photo-4 {
+    object-position: center 52%;
+}
+
+.live-photo-5 {
+    object-position: center 42%;
+}
+
+/* =========================================
+   INDIVIDUAL GALLERY CROPS
+========================================= */
+
+.live-photo-1 {
+    object-position: center center;
+}
+
+.live-photo-2 {
+    object-position: center 35%;
+}
+
+.live-photo-3 {
+    object-position: center 50%;
+}
+
+.live-photo-4 {
+    object-position: center 52%;
+}
+
+.live-photo-5 {
+    object-position: center 42%;
+}
+
 /* =========================================
    MUSIC
 ========================================= */
