@@ -288,10 +288,6 @@ section {
    LIVE PHOTO GALLERY
 ========================================= */
 
-/* =========================================
-   LIVE PHOTO GALLERY
-========================================= */
-
 .live-gallery {
     background: #171717;
     color: #f4f1eb;
@@ -378,6 +374,87 @@ section {
 
 .live-photo-5 {
     object-position: center 45%;
+}
+
+/* =========================================
+   PHOTO LIGHTBOX
+========================================= */
+
+.gallery-clickable {
+    cursor: pointer;
+}
+
+.lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(0, 0, 0, 0.94);
+    padding: 40px 90px;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+.lightbox img {
+    max-width: 90vw;
+    max-height: 88vh;
+    width: auto;
+    height: auto;
+
+    object-fit: contain;
+    display: block;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+
+    border: 0;
+    background: none;
+    color: white;
+
+    font-size: 48px;
+    line-height: 1;
+
+    cursor: pointer;
+    z-index: 10001;
+}
+
+.lightbox-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    border: 0;
+    background: rgba(0, 0, 0, 0.35);
+    color: white;
+
+    width: 60px;
+    height: 80px;
+
+    font-size: 44px;
+    cursor: pointer;
+
+    transition: background 0.2s ease;
+}
+
+.lightbox-arrow:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.lightbox-prev {
+    left: 20px;
+}
+
+.lightbox-next {
+    right: 20px;
 }
 
 /* =========================================
@@ -650,4 +727,34 @@ section {
         gap: 10px;
         text-align: center;
     }
+}
+.lightbox {
+        padding: 60px 15px 30px;
+    }
+
+    .lightbox img {
+        max-width: 95vw;
+        max-height: 80vh;
+    }
+
+    .lightbox-arrow {
+        width: 45px;
+        height: 65px;
+        font-size: 32px;
+    }
+
+    .lightbox-prev {
+        left: 5px;
+    }
+
+    .lightbox-next {
+        right: 5px;
+    }
+
+    .lightbox-close {
+        top: 12px;
+        right: 18px;
+        font-size: 40px;
+    }
+
 }
