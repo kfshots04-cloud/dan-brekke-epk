@@ -426,6 +426,15 @@
     </footer>
 
     <script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const galleryPhotos = document.querySelectorAll(".gallery-clickable");
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImage = document.getElementById("lightbox-image");
+    const closeButton = document.getElementById("lightbox-close");
+    const prevButton = document.getElementById("lightbox-prev");
+    const nextButton = document.getElementById("lightbox-next");
+    const counter = document.getElementById("lightbox-counter");
 
     const galleryImages = [
         {
@@ -450,98 +459,57 @@
         }
     ];
 
-    const galleryPhotos =
-        document.querySelectorAll(".gallery-clickable");
+    let currentIndex = 0;
 
-    const lightbox =
-        document.getElementById("lightbox");
+    function showImage(index) {
+        currentIndex = index;
 
-    const lightboxImage =
-        document.getElementById("lightbox-image");
+        lightboxImage.src = galleryImages[currentIndex].src;
+        lightboxImage.alt = galleryImages[currentIndex].alt;
 
-    const lightboxClose =
-        document.getElementById("lightbox-close");
-
-    const lightboxPrevious =
-        document.getElementById("lightbox-prev");
-
-    const lightboxNext =
-        document.getElementById("lightbox-next");
-
-    const lightboxCounter =
-        document.getElementById("lightbox-counter");
-
-    let currentImage = 0;
-
-
-    function displayImage(index) {
-
-        currentImage = index;
-
-        lightboxImage.src =
-            galleryImages[currentImage].src;
-
-        lightboxImage.alt =
-            galleryImages[currentImage].alt;
-
-        lightboxCounter.textContent =
-            `${currentImage + 1} / ${galleryImages.length}`;
-
+        if (counter) {
+            counter.textContent =
+                (currentIndex + 1) + " / " + galleryImages.length;
+        }
     }
-
 
     function openLightbox(index) {
-
-        displayImage(index);
+        showImage(index);
 
         lightbox.classList.add("active");
-
         document.body.style.overflow = "hidden";
-
     }
-
 
     function closeLightbox() {
-
         lightbox.classList.remove("active");
-
         document.body.style.overflow = "";
-
     }
 
+    function nextImage() {
+        currentIndex++;
 
-    function showNextImage() {
-
-        currentImage++;
-
-        if (currentImage >= galleryImages.length) {
-            currentImage = 0;
+        if (currentIndex >= galleryImages.length) {
+            currentIndex = 0;
         }
 
-        displayImage(currentImage);
-
+        showImage(currentIndex);
     }
 
+    function previousImage() {
+        currentIndex--;
 
-    function showPreviousImage() {
-
-        currentImage--;
-
-        if (currentImage < 0) {
-            currentImage = galleryImages.length - 1;
+        if (currentIndex < 0) {
+            currentIndex = galleryImages.length - 1;
         }
 
-        displayImage(currentImage);
-
+        showImage(currentIndex);
     }
 
-
-    galleryPhotos.forEach((photo) => {
+    galleryPhotos.forEach(function (photo) {
 
         photo.addEventListener("click", function () {
 
-            const index =
-                Number(photo.dataset.index);
+            const index = parseInt(photo.getAttribute("data-index"));
 
             openLightbox(index);
 
@@ -549,33 +517,28 @@
 
     });
 
+    closeButton.addEventListener("click", function () {
+        closeLightbox();
+    });
 
-    lightboxClose.addEventListener(
-        "click",
-        closeLightbox
-    );
+    nextButton.addEventListener("click", function () {
+        nextImage();
+    });
 
-
-    lightboxNext.addEventListener(
-        "click",
-        showNextImage
-    );
-
-
-    lightboxPrevious.addEventListener(
-        "click",
-        showPreviousImage
-    );
-
+    prevButton.addEventListener("click", function () {
+        previousImage();
+    });
 
     lightbox.addEventListener("click", function (event) {
 
-        if (event.target === lightbox) {
+        if (
+            event.target === lightbox ||
+            event.target.classList.contains("lightbox-image-wrapper")
+        ) {
             closeLightbox();
         }
 
     });
-
 
     document.addEventListener("keydown", function (event) {
 
@@ -584,11 +547,11 @@
         }
 
         if (event.key === "ArrowRight") {
-            showNextImage();
+            nextImage();
         }
 
         if (event.key === "ArrowLeft") {
-            showPreviousImage();
+            previousImage();
         }
 
         if (event.key === "Escape") {
@@ -597,6 +560,7 @@
 
     });
 
+});
 </script>
 
 </body>
