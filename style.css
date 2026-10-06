@@ -218,8 +218,11 @@ section {
 
     padding: 140px 7% 80px;
 
+    background:
+        url("images/hero-group.webp");
+
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
 }
 
