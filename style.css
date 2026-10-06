@@ -1571,13 +1571,43 @@ section {
         grid-template-columns: 1fr;
     }
 
+    /* BOOKING */
 
-    /* FOOTER */
+.booking-section {
+    padding: 65px 6% 45px;
+}
 
-    .site-footer {
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
-    }
+.booking-card {
+    grid-template-columns: 1fr;
 
+    min-height: auto;
+
+    gap: 45px;
+
+    padding: 40px 28px;
+}
+
+.booking-card h2 {
+    font-size: 52px;
+    letter-spacing: -2px;
+}
+
+.booking-action {
+    justify-content: flex-start;
+}
+
+.booking-button {
+    max-width: none;
+    min-height: 80px;
+}
+
+
+/* FOOTER */
+
+.site-footer {
+    padding: 16px 6%;
+
+    font-size: 9px;
+
+    text-align: center;
 }
