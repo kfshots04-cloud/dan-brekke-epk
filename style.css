@@ -1172,31 +1172,150 @@ section {
    BOOKING
 ========================================= */
 
-.booking {
-    min-height: 70vh;
+.booking-section {
+    background: #111;
+    color: #f4f1eb;
 
-    display: flex;
-    align-items: center;
+    padding: 90px 7% 70px;
+}
 
-    background: #f1eee8;
-    color: #111;
+.booking-card {
+    position: relative;
+
+    min-height: 430px;
+
+    display: grid;
+    grid-template-columns: 1.35fr 0.65fr;
+
+    align-items: end;
+
+    gap: 60px;
+
+    padding: 65px;
+
+    overflow: hidden;
+
+    border: 1px solid #383838;
+
+    background:
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(255,255,255,0.07),
+            transparent 35%
+        ),
+        linear-gradient(
+            135deg,
+            #1b1b1b,
+            #111
+        );
+}
+
+.booking-card::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100px;
+    height: 3px;
+
+    background: #f4f1eb;
 }
 
 .booking-content {
-    max-width: 900px;
+    position: relative;
+    z-index: 2;
 }
 
-.booking h2 {
-    font-size: clamp(60px, 10vw, 140px);
-    line-height: 0.85;
+.booking-label {
+    margin-bottom: 25px;
+
+    color: #999;
+
+    font-size: 11px;
+    letter-spacing: 3px;
     text-transform: uppercase;
-    margin-bottom: 40px;
 }
 
-.booking p {
-    font-size: 20px;
+.booking-card h2 {
+    margin: 0 0 30px;
+
+    max-width: 850px;
+
+    font-size: clamp(52px, 7vw, 105px);
+    line-height: 0.9;
+
+    letter-spacing: -3px;
+
+    text-transform: uppercase;
+}
+
+.booking-description {
     max-width: 600px;
-    margin-bottom: 30px;
+
+    color: #aaa;
+
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   BOOKING BUTTON
+========================================= */
+
+.booking-action {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.booking-button {
+    width: 100%;
+    max-width: 330px;
+
+    min-height: 95px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 30px;
+
+    background: #f4f1eb;
+    color: #111;
+
+    border: 1px solid #f4f1eb;
+
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        color 0.25s ease;
+}
+
+.booking-button:hover {
+    transform: translateY(-4px);
+
+    background: transparent;
+    color: #f4f1eb;
+}
+
+.booking-arrow {
+    font-size: 26px;
+
+    transition: transform 0.25s ease;
+}
+
+.booking-button:hover .booking-arrow {
+    transform: translateX(6px);
 }
 
 /* =========================================
@@ -1204,15 +1323,24 @@ section {
 ========================================= */
 
 .site-footer {
-    background: #111;
-    padding: 35px 7%;
+    background: #0b0b0b;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 18px 7%;
 
-    color: #777;
-    font-size: 12px;
+    color: #666;
+
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.site-footer p {
+    margin: 0;
+}
+
+.site-footer span {
+    margin: 0 8px;
+    opacity: 0.5;
 }
 
 /* =========================================
