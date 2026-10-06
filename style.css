@@ -1273,32 +1273,36 @@ section {
     justify-content: flex-end;
 }
 
-.booking-button {
-    width: 100%;
-    max-width: 330px;
+.booking-card {
+    position: relative;
 
-    min-height: 95px;
+    min-height: 430px;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1.35fr 0.65fr;
 
-    padding: 0 30px;
+    align-items: end;
 
-    background: #f4f1eb;
-    color: #111;
+    gap: 60px;
 
-    border: 1px solid #f4f1eb;
+    padding: 65px;
 
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+    overflow: hidden;
 
-    transition:
-        transform 0.25s ease,
-        background 0.25s ease,
-        color 0.25s ease;
+    border: 1px solid #383838;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.82) 0%,
+            rgba(0, 0, 0, 0.62) 48%,
+            rgba(0, 0, 0, 0.35) 100%
+        ),
+        url("images/booking-group.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .booking-button:hover {
