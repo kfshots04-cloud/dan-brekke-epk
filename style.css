@@ -1357,7 +1357,7 @@ section {
     left: 24px;
     bottom: 24px;
 
-    z-index: 9998;
+    z-index: 999999;
 
     width: 52px;
     height: 52px;
@@ -1366,31 +1366,32 @@ section {
     align-items: center;
     justify-content: center;
 
-    border: 1px solid rgba(255,255,255,0.2);
-    background: rgba(15,15,15,0.8);
+    background: #f4f1eb;
+    color: #111;
 
-    color: #f4f1eb;
+    border: 1px solid #f4f1eb;
 
     font-size: 24px;
+    font-weight: 500;
     line-height: 1;
+
+    text-decoration: none;
 
     cursor: pointer;
 
-    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.35);
 
     transition:
         transform 0.2s ease,
         background 0.2s ease,
-        border-color 0.2s ease;
+        color 0.2s ease;
 }
 
 .back-to-top:hover {
-    transform: translateY(-3px);
+    transform: translateY(-4px);
 
-    background: #f4f1eb;
-    color: #111;
-
-    border-color: #f4f1eb;
+    background: #111;
+    color: #f4f1eb;
 }
 
 /* =========================================
