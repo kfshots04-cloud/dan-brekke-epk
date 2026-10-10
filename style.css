@@ -219,7 +219,7 @@ section {
     padding: 140px 7% 80px;
 
     background:
-        url("images/hero-group.webp");
+        url("images/booking-group.webp");
 
     background-size: cover;
     background-position: center center;
@@ -1298,7 +1298,7 @@ section {
             rgba(0, 0, 0, 0.62) 48%,
             rgba(0, 0, 0, 0.35) 100%
         ),
-        url("images/booking-group.jpg");
+        url("images/hero-group.jpg");
 
     background-size: cover;
     background-position: center;
