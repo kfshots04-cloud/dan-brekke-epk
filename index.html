@@ -1064,5 +1064,130 @@ document.addEventListener("DOMContentLoaded", function () {
     ↑
 </a>
 
+    <!-- =========================================
+     STATIC PDF PREVIEWS
+========================================= -->
+
+<script type="module">
+
+import * as pdfjsLib from
+"https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.10.38/pdf.min.mjs";
+
+
+pdfjsLib.GlobalWorkerOptions.workerSrc =
+"https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.10.38/pdf.worker.min.mjs";
+
+
+const pdfPreviewCanvases =
+    document.querySelectorAll(".pdf-preview-canvas");
+
+
+pdfPreviewCanvases.forEach(async function(canvas) {
+
+    const pdfFile = canvas.dataset.pdf;
+
+    const container = canvas.parentElement;
+
+
+    try {
+
+        const pdf =
+            await pdfjsLib.getDocument(pdfFile).promise;
+
+
+        /* ONLY LOAD PAGE 1 */
+
+        const page =
+            await pdf.getPage(1);
+
+
+        const originalViewport =
+            page.getViewport({
+                scale: 1
+            });
+
+
+        /*
+        Scale the PDF so its width matches
+        the preview card.
+        */
+
+        const containerWidth =
+            container.clientWidth;
+
+
+        const scale =
+            containerWidth / originalViewport.width;
+
+
+        const viewport =
+            page.getViewport({
+                scale: scale
+            });
+
+
+        /*
+        Render at a higher resolution on
+        Retina / high-DPI displays.
+        */
+
+        const pixelRatio =
+            window.devicePixelRatio || 1;
+
+
+        canvas.width =
+            Math.floor(viewport.width * pixelRatio);
+
+
+        canvas.height =
+            Math.floor(viewport.height * pixelRatio);
+
+
+        canvas.style.width =
+            viewport.width + "px";
+
+
+        canvas.style.height =
+            viewport.height + "px";
+
+
+        const context =
+            canvas.getContext("2d");
+
+
+        await page.render({
+
+            canvasContext: context,
+
+            viewport: viewport,
+
+            transform: [
+                pixelRatio,
+                0,
+                0,
+                pixelRatio,
+                0,
+                0
+            ]
+
+        }).promise;
+
+
+    }
+
+    catch (error) {
+
+        console.error(
+            "PDF preview could not be loaded:",
+            pdfFile,
+            error
+        );
+
+    }
+
+});
+
+</script>
+    
 </body>
 </html>
