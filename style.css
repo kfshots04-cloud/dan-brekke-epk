@@ -1137,7 +1137,9 @@ section {
 .downloads-content h2 {
     font-size: clamp(42px, 6vw, 80px);
     line-height: 0.95;
+
     text-transform: uppercase;
+
     margin-bottom: 45px;
 }
 
@@ -1148,21 +1150,26 @@ section {
 
 .download-grid {
     display: grid;
+
     grid-template-columns: repeat(3, 1fr);
+
     gap: 16px;
 }
 
 
 /* =========================================
-   DOWNLOAD CARDS
+   DOWNLOAD CARD
 ========================================= */
 
 .download-card {
     position: relative;
+
     min-width: 0;
+
     overflow: hidden;
 
     background: #202020;
+
     border: 1px solid #3c3c3c;
 
     transition:
@@ -1173,7 +1180,9 @@ section {
 
 .download-card:hover {
     transform: translateY(-4px);
+
     border-color: #666;
+
     background: #242424;
 }
 
@@ -1183,38 +1192,38 @@ section {
 ========================================= */
 
 .download-preview {
+    position: relative;
+
     width: 100%;
     height: 135px;
 
     overflow: hidden;
+
     background: #111;
 }
 
 
 /* =========================================
-   PDF PREVIEW
-   STATIC / NON-INTERACTIVE
+   STATIC PDF PREVIEW
 ========================================= */
 
 .document-preview {
-    position: relative;
-
-    height: 135px;
-
-    overflow: hidden;
-    background: #e6e6e6;
+    background: #e5e5e5;
 }
 
-.document-preview iframe {
-    width: 100%;
-    height: 500px;
+.pdf-preview-canvas {
+    position: absolute;
 
-    border: 0;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
     display: block;
 
     pointer-events: none;
 
-    transform-origin: top center;
+    user-select: none;
 }
 
 
@@ -1224,24 +1233,28 @@ section {
 
 .dropbox-preview {
     display: flex;
+
     align-items: center;
     justify-content: center;
 
     background:
         radial-gradient(
             circle at 50% 30%,
-            rgba(255,255,255,0.12),
+            rgba(255, 255, 255, 0.12),
             transparent 55%
         ),
         #0061ff;
 
-    color: white;
+    color: #fff;
 }
 
 .dropbox-preview-content {
     display: flex;
+
     flex-direction: column;
+
     align-items: center;
+    justify-content: center;
 
     text-align: center;
 }
@@ -1255,9 +1268,11 @@ section {
 
 .dropbox-preview-label {
     font-size: 15px;
+
     font-weight: 700;
 
     letter-spacing: 2px;
+
     text-transform: uppercase;
 }
 
@@ -1265,6 +1280,7 @@ section {
     margin-top: 4px;
 
     font-size: 9px;
+
     letter-spacing: 3px;
 
     text-transform: uppercase;
@@ -1281,7 +1297,9 @@ section {
     min-height: 95px;
 
     display: flex;
+
     flex-direction: column;
+
     justify-content: space-between;
 
     padding: 18px 22px;
@@ -1289,7 +1307,9 @@ section {
 
 .download-card-info span {
     font-size: 10px;
+
     letter-spacing: 2px;
+
     opacity: 0.55;
 }
 
@@ -1297,9 +1317,11 @@ section {
     margin: 9px 0 5px;
 
     font-size: 17px;
+
     line-height: 1.1;
 
     letter-spacing: 1px;
+
     text-transform: uppercase;
 }
 
@@ -1307,6 +1329,7 @@ section {
     color: #999;
 
     font-size: 9px;
+
     letter-spacing: 1px;
 
     text-transform: uppercase;
@@ -1314,16 +1337,16 @@ section {
 
 
 /* =========================================
-   FULL CARD LINK
+   FULL CARD CLICK AREA
 ========================================= */
 
 .download-card-link {
     position: absolute;
+
     inset: 0;
 
     z-index: 5;
 }
-
 /* =========================================
    BOOKING
 ========================================= */
@@ -1823,6 +1846,7 @@ section {
 
 .download-grid {
     grid-template-columns: 1fr;
+
     gap: 18px;
 }
 
@@ -1830,16 +1854,9 @@ section {
     height: 150px;
 }
 
-.document-preview {
-    height: 150px;
-}
-
-.document-preview iframe {
-    height: 520px;
-}
-
 .download-card-info {
     min-height: 95px;
+
     padding: 18px 20px;
 }
 
