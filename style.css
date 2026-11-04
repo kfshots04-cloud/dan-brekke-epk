@@ -1138,7 +1138,6 @@ section {
     font-size: clamp(42px, 6vw, 80px);
     line-height: 0.95;
     text-transform: uppercase;
-
     margin-bottom: 45px;
 }
 
@@ -1150,7 +1149,6 @@ section {
 .download-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-
     gap: 16px;
 }
 
@@ -1161,13 +1159,10 @@ section {
 
 .download-card {
     position: relative;
-
     min-width: 0;
-
     overflow: hidden;
 
     background: #202020;
-
     border: 1px solid #3c3c3c;
 
     transition:
@@ -1177,10 +1172,8 @@ section {
 }
 
 .download-card:hover {
-    transform: translateY(-5px);
-
+    transform: translateY(-4px);
     border-color: #666;
-
     background: #242424;
 }
 
@@ -1191,33 +1184,37 @@ section {
 
 .download-preview {
     width: 100%;
-    height: 310px;
+    height: 135px;
 
     overflow: hidden;
-
     background: #111;
 }
 
 
 /* =========================================
    PDF PREVIEW
+   STATIC / NON-INTERACTIVE
 ========================================= */
 
 .document-preview {
     position: relative;
 
+    height: 135px;
+
+    overflow: hidden;
     background: #e6e6e6;
 }
 
 .document-preview iframe {
     width: 100%;
-    height: 100%;
+    height: 500px;
 
     border: 0;
-
     display: block;
 
     pointer-events: none;
+
+    transform-origin: top center;
 }
 
 
@@ -1250,26 +1247,24 @@ section {
 }
 
 .dropbox-logo {
-    width: 70px;
+    width: 46px;
     height: auto;
 
-    margin-bottom: 22px;
+    margin-bottom: 10px;
 }
 
 .dropbox-preview-label {
-    font-size: 22px;
+    font-size: 15px;
     font-weight: 700;
 
     letter-spacing: 2px;
-
     text-transform: uppercase;
 }
 
 .dropbox-preview-content small {
-    margin-top: 7px;
+    margin-top: 4px;
 
-    font-size: 11px;
-
+    font-size: 9px;
     letter-spacing: 3px;
 
     text-transform: uppercase;
@@ -1283,39 +1278,35 @@ section {
 ========================================= */
 
 .download-card-info {
-    min-height: 145px;
+    min-height: 95px;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
-    padding: 25px 28px;
+    padding: 18px 22px;
 }
 
 .download-card-info span {
-    font-size: 11px;
-
+    font-size: 10px;
     letter-spacing: 2px;
-
     opacity: 0.55;
 }
 
 .download-card-info strong {
-    margin: 16px 0 8px;
+    margin: 9px 0 5px;
 
-    font-size: 20px;
+    font-size: 17px;
     line-height: 1.1;
 
     letter-spacing: 1px;
-
     text-transform: uppercase;
 }
 
 .download-card-info small {
     color: #999;
 
-    font-size: 11px;
-
+    font-size: 9px;
     letter-spacing: 1px;
 
     text-transform: uppercase;
@@ -1328,7 +1319,6 @@ section {
 
 .download-card-link {
     position: absolute;
-
     inset: 0;
 
     z-index: 5;
@@ -1827,7 +1817,9 @@ section {
     }
 
 }
-   /* MEDIA & DOWNLOADS */
+   /* =========================================
+   MEDIA & DOWNLOADS - MOBILE
+========================================= */
 
 .download-grid {
     grid-template-columns: 1fr;
@@ -1835,13 +1827,36 @@ section {
 }
 
 .download-preview {
-    height: 360px;
+    height: 150px;
+}
+
+.document-preview {
+    height: 150px;
+}
+
+.document-preview iframe {
+    height: 520px;
 }
 
 .download-card-info {
-    min-height: 125px;
+    min-height: 95px;
+    padding: 18px 20px;
+}
 
-    padding: 22px 24px;
+.download-card-info strong {
+    font-size: 16px;
+}
+
+.download-card-info small {
+    font-size: 9px;
+}
+
+.dropbox-logo {
+    width: 44px;
+}
+
+.dropbox-preview-label {
+    font-size: 14px;
 }
    
     /* OTHER SECTIONS */
