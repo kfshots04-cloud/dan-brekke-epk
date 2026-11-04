@@ -1126,46 +1126,97 @@ section {
 }
 
 /* =========================================
-   DOWNLOADS
+   MEDIA & DOWNLOADS
 ========================================= */
 
-.media {
+.downloads-section {
     background: #171717;
+    color: #f4f1eb;
+}
+
+.downloads-content h2 {
+    font-size: clamp(42px, 6vw, 80px);
+    line-height: 0.95;
+    text-transform: uppercase;
+
+    margin-bottom: 45px;
 }
 
 .download-grid {
     display: grid;
+
     grid-template-columns: repeat(3, 1fr);
+
     gap: 15px;
 }
 
-.download-card {
-    border: 1px solid #444;
-    padding: 35px;
 
+/* DOWNLOAD CARDS */
+
+.download-card {
     min-height: 180px;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
-    transition: background 0.2s;
+    padding: 35px;
+
+    border: 1px solid #444;
+
+    color: #f4f1eb;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
 }
 
 .download-card:hover {
     background: #222;
+
+    border-color: #666;
+
+    transform: translateY(-3px);
 }
 
-.download-card h3 {
-    font-size: 22px;
-    text-transform: uppercase;
-}
+
+/* CARD NUMBER */
 
 .download-card span {
     font-size: 12px;
+
     letter-spacing: 2px;
+
     text-transform: uppercase;
+
     opacity: 0.6;
+}
+
+
+/* CARD TITLE */
+
+.download-card strong {
+    font-size: 22px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+
+/* CARD DESCRIPTION */
+
+.download-card small {
+    color: #999;
+
+    font-size: 12px;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
 }
 
 /* =========================================
