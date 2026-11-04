@@ -1142,81 +1142,196 @@ section {
     margin-bottom: 45px;
 }
 
+
+/* =========================================
+   DOWNLOAD GRID
+========================================= */
+
 .download-grid {
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
 
-    gap: 15px;
+    gap: 16px;
 }
 
 
-/* DOWNLOAD CARDS */
+/* =========================================
+   DOWNLOAD CARDS
+========================================= */
 
 .download-card {
-    min-height: 180px;
+    position: relative;
+
+    min-width: 0;
+
+    overflow: hidden;
+
+    background: #202020;
+
+    border: 1px solid #3c3c3c;
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        background 0.25s ease;
+}
+
+.download-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #666;
+
+    background: #242424;
+}
+
+
+/* =========================================
+   PREVIEW AREA
+========================================= */
+
+.download-preview {
+    width: 100%;
+    height: 310px;
+
+    overflow: hidden;
+
+    background: #111;
+}
+
+
+/* =========================================
+   PDF PREVIEW
+========================================= */
+
+.document-preview {
+    position: relative;
+
+    background: #e6e6e6;
+}
+
+.document-preview iframe {
+    width: 100%;
+    height: 100%;
+
+    border: 0;
+
+    display: block;
+
+    pointer-events: none;
+}
+
+
+/* =========================================
+   DROPBOX PREVIEW
+========================================= */
+
+.dropbox-preview {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:
+        radial-gradient(
+            circle at 50% 30%,
+            rgba(255,255,255,0.12),
+            transparent 55%
+        ),
+        #0061ff;
+
+    color: white;
+}
+
+.dropbox-preview-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+.dropbox-logo {
+    width: 70px;
+    height: auto;
+
+    margin-bottom: 22px;
+}
+
+.dropbox-preview-label {
+    font-size: 22px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+.dropbox-preview-content small {
+    margin-top: 7px;
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+
+    opacity: 0.75;
+}
+
+
+/* =========================================
+   CARD INFORMATION
+========================================= */
+
+.download-card-info {
+    min-height: 145px;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
-    padding: 35px;
-
-    border: 1px solid #444;
-
-    color: #f4f1eb;
-
-    transition:
-        background 0.2s ease,
-        border-color 0.2s ease,
-        transform 0.2s ease;
+    padding: 25px 28px;
 }
 
-.download-card:hover {
-    background: #222;
-
-    border-color: #666;
-
-    transform: translateY(-3px);
-}
-
-
-/* CARD NUMBER */
-
-.download-card span {
-    font-size: 12px;
+.download-card-info span {
+    font-size: 11px;
 
     letter-spacing: 2px;
 
-    text-transform: uppercase;
-
-    opacity: 0.6;
+    opacity: 0.55;
 }
 
+.download-card-info strong {
+    margin: 16px 0 8px;
 
-/* CARD TITLE */
-
-.download-card strong {
-    font-size: 22px;
-
-    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.1;
 
     letter-spacing: 1px;
 
     text-transform: uppercase;
 }
 
-
-/* CARD DESCRIPTION */
-
-.download-card small {
+.download-card-info small {
     color: #999;
 
-    font-size: 12px;
+    font-size: 11px;
 
     letter-spacing: 1px;
 
     text-transform: uppercase;
+}
+
+
+/* =========================================
+   FULL CARD LINK
+========================================= */
+
+.download-card-link {
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 5;
 }
 
 /* =========================================
@@ -1711,6 +1826,22 @@ section {
         grid-template-columns: 1fr;
     }
 
+}
+   /* MEDIA & DOWNLOADS */
+
+.download-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+}
+
+.download-preview {
+    height: 360px;
+}
+
+.download-card-info {
+    min-height: 125px;
+
+    padding: 22px 24px;
 }
    
     /* OTHER SECTIONS */
